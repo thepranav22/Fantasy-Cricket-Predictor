@@ -37,7 +37,11 @@ def calculate(request, team1, team2):
     #Data path selection
     def getCsvPath(team1, team2):
         if team1 == team2: return 'Invalid Input'
-        DATA_PATH = '/home/vishal/Documents/Fantasy-Prediction/data'
+        # DATA_PATH = '/home/vishal/Documents/Fantasy-Prediction/data'
+
+        # DATA_PATH = 'C:\Users\HP\Desktop\hello cric\Fantasy-Cricket-Predictor\data'
+        # DATA_PATH = 'C:\Users\HP\Desktop\hello cric\Fantasy-Cricket-Prector\data'
+        DATA_PATH = r'C:\Users\HP\Desktop\hello-cric\Fantasy-Cricket-Predictor\data'
         team_mapping = {'CHENNAI SUPER KINGS': 'CSK', 
                         'DELHI CAPITALS': 'DC',
                         'KOLKATA KNIGHT RIDERS': 'KKR', 
